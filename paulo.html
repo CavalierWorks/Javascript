@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Valida</title>	
+</head>
+<body>
+
+
+<p>Preencha todos os campos!
+<br/>[O não preenchimento causará erro]</p>
+<input type="text" id="nome">
+Nome<br/>
+<br/>
+<input type="text" id="cpf">
+CPF<br/>
+<br/>
+<input type="text" id="email">
+Email<br/>
+<br/>
+<input type="text" id="telefone">
+Telefone<br/>
+<br/>
+<button onclick="verifica()">Verificar</button>
+<p id="msg"></p>
+	
+
+	<script>
+
+	function verifica(){
+		var nome = document.getElementById('nome').value;
+		var cpf = document.getElementById('cpf').value;
+		var email = document.getElementById('email').value;
+		var telefone = document.getElementById('telefone').value;
+		
+		try{
+			if(nome == '' || cpf == '' || email == '' || telefone == '') throw 'Preencha todos os campos'; {
+				alert("Só alegria!")
+			}			
+			
+
+			}catch(e){
+			document.getElementById('msg').innerHTML = 'Erro ' + e; 
+		} finally {
+			//document.getElementById('nome',  'cpf', 'email', 'telefone').value = '';
+			document.getElementById('nome').value = '';
+			document.getElementById('cpf').value = '';
+			document.getElementById('email').value = '';
+			document.getElementById('telefone').value = '';
+		}
+
+	}
+	
+
+		
+	</script>
+
+	
+
+
+</body>
+</html>

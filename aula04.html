@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Aula 04 -JS</title>	
+</head>
+<body>
+	<script>
+		var pessoa = ['Ricardo', 'Bernardi', '32'];
+
+		var frutas = ['laranja', 'melancia', 'maçã', 'limão'];
+		//O array deve ser preferencialmente usado quando é preciso armazenar informações de um mesmo contexto. Como na variável 'frutas'. No caso de informações de contextos distintos é melhor usar um objeto.
+
+		var pessoa = {
+			nome:'Roque',
+		 	sobrenome:'Balboa',
+		 	idade:32,
+		 	andar: function() {
+		 		alert("caminhando")
+		 		}
+		 	};
+		//A primeira diferença na criação de um objeto em JavaScript é que ele é circundado por Chaves, e não por colchetes.
+
+		frutas.push('acerola', 'uva', 'pitanga', 'framboesa');
+		//esta função adiciona automaticamente um valor ao final do array, sem que tenhamos a necessidade de saber quantos valores e quais posições existem nesse Array
+
+		//O método 'pop' é o inverso do método 'push', pois exclui o ultimo item do Array.
+
+		//O método 'shift' é similar ao 'pop', porém ao invés de remover o último, remove o primeiro valor
+
+		//O método 'unshift', pelo contrário, adiciona um item no começo do Array.
+
+		frutas.sort();
+		//Ordena os items por ordem alfabética
+
+		
+		console.log(frutas.join(' > '));
+		//Este metodo junta as informações contidas em um Array e as separa utilizando o caractere que declaramos entre parênteses
+
+
+		//console.log(frutas.toString());
+	</script>
+
+
+</body>
+</html>

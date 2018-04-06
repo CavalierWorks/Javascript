@@ -1,0 +1,10 @@
+<html>
+  <head>
+    <title>Artigo 01 - Olá World!</title>
+    <script language="javascript" type="text/javascript">
+      alert('Metal is the Law!');
+    </script>
+  </head>
+  <body>
+  </body>
+</html> 

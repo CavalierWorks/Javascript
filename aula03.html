@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Aula 03 -JS</title>	
+</head>
+<body>
+	<script>
+
+	nome = prompt("Informe seu nome");
+
+		function alerta(mensagem) {
+			alert(mensagem)
+		}
+
+		function metade(num) {
+			return num / 2;
+		}
+
+		//A função 'metade' vai receber um parâmetro de nome 'num', vai dividi-lo por 2 e vai retornar o resultado dessa divisão [do caralho!]
+
+		//Uma função com 'return' executa uma determinada tarefa e retorna um valor. A função sem valor apenas executa uma determinada tarefa
+
+		function dividir(num, por) {
+			return num / por;
+		}
+
+		//A função 'dividir' vai receber duas variaveis declaradas respectivamente, por exemplo (1 , 5) e substitui-las para realizar a operação e devolver esse resultado
+
+
+		function dividir2(num, por = 2) {
+			return num / por;
+		}
+
+		//Neste caso o segundo parametro possui um valor pre estabelecido que só será utilizado caso o valor do parâmetro não tenha sido enviado
+		
+		//NaN = Not a Number
+
+
+
+		alerta("10 dividido por 5 é " + dividir2(10));
+
+
+	</script>
+
+
+</body>
+</html>
